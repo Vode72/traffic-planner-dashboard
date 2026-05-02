@@ -1,16 +1,52 @@
-# React + Vite
+# Traffic Planner Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based logistics planning dashboard prototype.
 
-Currently, two official plugins are available:
+This project demonstrates how transport planners can monitor daily transports, driver hours, capacity usage and EU driving time risk in a simple dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- KPI dashboard for transport planning
+- Transport status badges (On route / Loading / Delayed)
+- Capacity warning system
+- Driver hours warning
+- EU Driving Time risk widget
+- Transport filtering (All / Delayed / High priority)
+- Search transport by ID
+- Data-driven dashboard metrics
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- CSS
+- Git / GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Example Dashboard Components
+
+- Transport overview table
+- Planner KPI cards
+- EU Driving Time Check
+- Capacity alerts
+- Driver hours risk indicator
+
+## Purpose
+
+The goal of this project is to demonstrate:
+
+- logistics domain knowledge
+- transport planning workflows
+- dashboard design
+- frontend development with React
+
+## Future Improvements
+
+- Map view for transports
+- Real-time transport updates
+- Backend API integration
+- Route optimization tools
+
+## Author
+
+Toni Voutilainen
