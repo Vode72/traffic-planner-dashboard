@@ -29,6 +29,10 @@ Tämä projekti osoittaa käytännössä:
 - dashboard-ajattelua
 - frontend-kehitystä Reactilla
 
+## Live Demo
+
+https://Vode72.github.io/traffic-planner-dashboard
+
 ## English summary
 
 A React-based logistics planning dashboard prototype for monitoring transports, capacity, driver hours and EU driving time risk.
