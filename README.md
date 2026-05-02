@@ -8,6 +8,11 @@ React-pohjainen kuljetussuunnittelun dashboard-prototyyppi.
 https://Vode72.github.io/traffic-planner-dashboard
 
 
+## Screenshot
+
+![Traffic Planner Dashboard](dashboard-screenshot.png)
+
+
 ## Ominaisuudet
 
 - Kuljetusten KPI-näkymä
