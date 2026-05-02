@@ -136,9 +136,24 @@ function App(){
       <h1>Traffic Planner Dashboard</h1>
 
       <div style={{marginBottom:"20px"}}>
-        <button onClick={() => setFilter("all")}>All</button>
-        <button onClick={() => setFilter("delayed")}>Delayed</button>
-        <button onClick={() => setFilter("high")}>High priority</button>
+        <button onClick={() => {
+            setFilter("all")
+            setSearch("")
+          }}>
+            All
+        </button>
+        <button onClick={() => {
+            setFilter("delayed")
+            setSearch("")
+          }}>
+            Delayed
+        </button>
+        <button onClick={() => {
+            setFilter("high")
+            setSearch("")
+          }}>
+            High priority
+        </button>
       </div>
 
       <input
