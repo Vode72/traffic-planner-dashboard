@@ -2,6 +2,12 @@
 
 React-pohjainen kuljetussuunnittelun dashboard-prototyyppi.
 
+
+## Live Demo
+
+https://Vode72.github.io/traffic-planner-dashboard
+
+
 ## Ominaisuudet
 
 - Kuljetusten KPI-näkymä
@@ -29,9 +35,6 @@ Tämä projekti osoittaa käytännössä:
 - dashboard-ajattelua
 - frontend-kehitystä Reactilla
 
-## Live Demo
-
-https://Vode72.github.io/traffic-planner-dashboard
 
 ## English summary
 

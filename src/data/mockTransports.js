@@ -8,7 +8,8 @@ export const transports = [
     capacity: "80%",
     priority: "normal",
     trailer: "reefer",
-    driverHoursLeft: 3.5
+    driverHoursLeft: 3.5,
+    position: [60.1699, 24.9384]
   },
   {
     id: "FTL002",
@@ -19,7 +20,8 @@ export const transports = [
     capacity: "60%",
     priority: "high",
     trailer: "box",
-    driverHoursLeft: 6
+    driverHoursLeft: 6,
+    position: [60.2934, 25.0378] // Vantaa
   },
   {
     id: "FTL003",
@@ -30,6 +32,7 @@ export const transports = [
     capacity: "95%",
     priority: "critical",
     trailer: "reefer",
-    driverHoursLeft: 1.2
+    driverHoursLeft: 1.2,
+    position: [60.9827, 25.6615] // Lahti
   }
 ]

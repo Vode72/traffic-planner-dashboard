@@ -1,5 +1,7 @@
 import { useState } from "react"
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
 import { transports } from "./data/mockTransports"
+
 
 function statusBadge(status){
   const colors = {
@@ -171,6 +173,40 @@ function App(){
         <p>Rest required soon: {restRequiredCount}</p>
 
       </div>
+
+      <div style={{
+            height: "400px",
+            marginBottom: "30px",
+            borderRadius: "10px",
+            overflow: "hidden",
+            border: "1px solid #374151"
+          }}>
+
+            <MapContainer 
+              center={[61.0, 25.0]} 
+              zoom={6} 
+              style={{ height: "100%", width: "100%" }}
+            >
+              <TileLayer
+                attribution='&copy; OpenStreetMap contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+
+              {filteredTransports.map(t => (
+                <Marker key={t.id} position={t.position}>
+                  <Popup>
+                    <strong>{t.id}</strong><br />
+                    {t.from} → {t.to}<br />
+                    Status: {t.status.replace("_", " ")}<br />
+                    ETA: {t.eta}<br />
+                    Capacity: {t.capacity}
+                  </Popup>
+                </Marker>
+              ))}
+
+            </MapContainer>
+
+          </div>
 
       <h2>Today's transports</h2>
 
