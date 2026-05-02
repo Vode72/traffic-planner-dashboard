@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+import L from "leaflet"
 import { transports } from "./data/mockTransports"
 
 
@@ -69,6 +70,30 @@ function capacityWarning(capacity){
     color: "lightgreen",
     fontWeight: "bold"
   }
+}
+
+function transportMarker(status){
+  const colors = {
+    on_route: "#16a34a",
+    loading: "#f59e0b",
+    delayed: "#ef4444"
+  }
+
+  return L.divIcon({
+    className: "",
+    html: `
+      <div style="
+        width: 18px;
+        height: 18px;
+        background: ${colors[status] || "#64748b"};
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0,0,0,0.4);
+      "></div>
+    `,
+    iconSize: [24, 24],
+    iconAnchor: [12, 12]
+  })
 }
 
 function App(){
@@ -193,7 +218,7 @@ function App(){
               />
 
               {filteredTransports.map(t => (
-                <Marker key={t.id} position={t.position}>
+                <Marker key={t.id} position={t.position} icon={transportMarker(t.status)}>
                   <Popup>
                     <strong>{t.id}</strong><br />
                     {t.from} → {t.to}<br />
