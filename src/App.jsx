@@ -154,15 +154,29 @@ function App(){
           }}>
             High priority
         </button>
+
       </div>
 
-      <input
-        type="text"
-        placeholder="Search transport ID..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        style={{marginBottom:"20px", padding:"8px", width:"200px"}}
-      />
+      <div style={{marginBottom:"20px"}}>
+
+        <input
+          type="text"
+          placeholder="Search transport ID..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={{padding:"8px", width:"200px", marginRight:"10px"}}
+        />
+
+        <button
+          onClick={() => {
+            setFilter("all")
+            setSearch("")
+          }}
+        >
+          Reset
+        </button>
+
+      </div>
 
       <div style={{display:"flex", gap:"20px", marginBottom:"30px"}}>
 
